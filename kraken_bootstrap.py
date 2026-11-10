@@ -9,7 +9,7 @@ IMAGE = "ghcr.io/chevalierpierree/kraken-bootstrap:d753a65fee02edbdf19b6b1138dc4
 with DAG(
     dag_id="kraken_bootstrap",
     # Tous les jours à 6h00 UTC (minute, heure, jour, mois, jour de la semaine)
-    schedule="30 7 * * *",
+    schedule="0 6 * * *",
     start_date=datetime(2026, 11, 1),
     # Ne pas lancer un run pour chaque jour passé depuis start_date
     catchup=False,
